@@ -40,14 +40,12 @@
 
   }
   :active :after {
-    background-image: url("./../../../assets/images/select.png");
+    background-image: url("./../../../assets/images/select.svg");
     background-repeat: no-repeat;
     background-position: center;
     color: #3C4561;
     background-color: #83F6B1;
     z-index: 10;
-
-
   }
 }
 

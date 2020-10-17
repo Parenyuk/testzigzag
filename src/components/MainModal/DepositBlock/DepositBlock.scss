@@ -3,18 +3,26 @@
   font-size: 16px;
   line-height: 16px;
   color: #EEEEEE;
-
-
   width: 392px;
   height: 40px;
-  background: #3C4561;
   padding-left: 60px;
   cursor: pointer;
-}
-.choicePaymentMethod::before {
-  //content: url('./../../assets/images/card.png');
-  //background-image: url("./../../assets/images/card.png");
+  position: relative;
+  background-image: url("./../../../assets/images/card.png");
+  background-position: 19px 12px ;
+  background-repeat: no-repeat;
+
+  :before {
+    content: '';
+    position: absolute;
+    background-image: url("./../../../assets/images/card.png");
+    width: 20px;
+    height: 15px;
+    top: 0;
+    left: 10%;
+    z-index: 8;
   }
+}
 
 
 .depositBlock {

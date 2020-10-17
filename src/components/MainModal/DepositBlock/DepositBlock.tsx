@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {FormEvent, useState} from 'react';
 import './DepositBlock.scss'
 import {DepositCard} from '../DepositCard/DepositCard';
 
@@ -17,12 +17,13 @@ export const DepositBlock = (props: any) => {
     }
 
 
+
     return (
         <div className='depositBlock'>
             <select className='choicePaymentMethod'>
-                <option className='bankcard'>Банковская карта</option>
-                <option>Биткоин</option>
-                <option>Выставить счет</option>
+                <option >Банковская карта</option>
+                <option >Биткоин</option>
+                <option >Выставить счет</option>
             </select>
             <div className='depositCards'>
                 <DepositCard addCount={50} getCount={100} depositAmount={depositAmount} />

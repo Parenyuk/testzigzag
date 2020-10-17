@@ -1,5 +1,5 @@
 import React from 'react';
-import timer from '../../../assets/images/Timer.png';
+import timer from '../../../assets/images/timer.svg';
 import './Timer.scss'
 
 type PropsType = {
