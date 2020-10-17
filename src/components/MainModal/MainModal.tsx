@@ -19,7 +19,7 @@ export const MainModal = ({title, setIsShown}: PropsType): React.ReactElement =>
         <div className='MainModal'>
         <Modal >
             <Percents/>
-            <Timer/>
+            <Timer hours={0} minutes={16} seconds={0} />
             <button className='closeButton' onClick={() =>setIsShown(false)} >
                 <img alt={'#'} src={closeButton}  />
             </button>
@@ -27,7 +27,6 @@ export const MainModal = ({title, setIsShown}: PropsType): React.ReactElement =>
                 {title}
             </div>
             {/*<img alt={'#'} src={cardImg} />*/}
-
             <DepositBlock/>
             <div className='noteText'>
                 При пополнение счета с банковской карты списание средств происходит по курсу банка клиента

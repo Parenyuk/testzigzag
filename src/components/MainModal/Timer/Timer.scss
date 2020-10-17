@@ -1,8 +1,10 @@
 .timer {
-  //position: absolute;
-  //top: 150px;
-  //left: 730px;
   display: flex;
   align-items: center;
+  color: #83F6B1;
+  font-size: 20px;
 
+  img {
+    padding-right: 5px;
+  }
 }
