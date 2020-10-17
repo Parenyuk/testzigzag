@@ -1,0 +1,31 @@
+.depositCard {
+  width: 160px;
+  height: 200px;
+  background: #3C4561;
+  border: 2px solid #91ACD4;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 20px rgba(24, 28, 38, 0.5);
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px 10px;
+  line-height: 35px;
+  :hover{
+    transform: none;
+  }
+}
+
+.depositCardLowerPart {
+  color:  #83F6B1;
+  font-size: 22px;
+  margin-top: 20px;
+
+}
