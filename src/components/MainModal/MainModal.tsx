@@ -17,7 +17,7 @@ export const MainModal = ({title, setIsShown}: PropsType): React.ReactElement =>
 
     return (
         <div className='MainModal'>
-        <Modal >
+        <Modal>
             <Percents/>
             <Timer hours={0} minutes={16} seconds={0} />
             <button className='closeButton' onClick={() =>setIsShown(false)} >

@@ -18,10 +18,39 @@
   justify-content: center;
   padding: 35px 10px;
   line-height: 35px;
+  position: relative;
+  cursor: pointer;
+
+
+
   :hover{
     transform: none;
   }
+  :after {
+   content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #83F6B1;
+    background-color: #3D455E;
+    bottom: -9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  :active :after {
+    background-image: url("./../../../assets/images/select.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3C4561;
+    background-color: #83F6B1;
+    z-index: 10;
+
+
+  }
 }
+
 
 .depositCardLowerPart {
   color:  #83F6B1;
@@ -29,3 +58,4 @@
   margin-top: 20px;
 
 }
+

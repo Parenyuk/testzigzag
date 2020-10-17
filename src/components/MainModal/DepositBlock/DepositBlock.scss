@@ -9,6 +9,7 @@
   height: 40px;
   background: #3C4561;
   padding-left: 60px;
+  cursor: pointer;
 }
 .choicePaymentMethod::before {
   //content: url('./../../assets/images/card.png');
@@ -34,6 +35,8 @@
 
 }
 .resultText {
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: white;
   text-align: center;
   font-size: 16px;
@@ -52,5 +55,13 @@
   border-radius: 5555px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin-top: 15px;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .depositCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
+  }
 }

@@ -20,7 +20,7 @@ export const DepositBlock = (props: any) => {
     return (
         <div className='depositBlock'>
             <select className='choicePaymentMethod'>
-                <option>Банковская карта</option>
+                <option className='bankcard'>Банковская карта</option>
                 <option>Биткоин</option>
                 <option>Выставить счет</option>
             </select>

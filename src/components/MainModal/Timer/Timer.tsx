@@ -12,7 +12,7 @@ export const Timer = ({ hours, minutes, seconds }: PropsType) => {
     const [time, setTime] = React.useState<any>({hours, minutes, seconds});
 
     const tick = () => {
-        if (time.hours == 0 && time.minutes == 0 && time.seconds == 0) alert('время сессия закончилось');
+        if (time.hours == 0 && time.minutes == 0 && time.seconds == 0) alert('время сессии закончилось');
         else if (time.minutes == 0 && time.seconds == 0) {
             setTime({
                 hours: time.hours - 1,
