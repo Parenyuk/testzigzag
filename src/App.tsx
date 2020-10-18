@@ -10,9 +10,10 @@ function App() {
     }
     return (
         <div className='App'>
-            {isShown &&  <MainModal title={'Увеличьте свой депозит!'} setIsShown={setIsShown}  />}
-              <button onClick={openMainModal} className='openButton' >
-                  Открыть модалку </button>
+            {isShown && <MainModal title={'Увеличьте свой депозит!'} setIsShown={setIsShown}/>}
+            <button onClick={openMainModal} className='openButton'>
+                Открыть модалку
+            </button>
         </div>
     );
 }

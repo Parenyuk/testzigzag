@@ -8,7 +8,7 @@ type PropsType = {
     seconds: number
 }
 
-export const Timer = ({ hours, minutes, seconds }: PropsType) => {
+export const Timer = ({hours, minutes, seconds}: PropsType) => {
     const [time, setTime] = React.useState<any>({hours, minutes, seconds});
 
     const tick = () => {
@@ -41,9 +41,7 @@ export const Timer = ({ hours, minutes, seconds }: PropsType) => {
 
     return (
         <div className='timer'>
-            <img alt='#' src={timer} />
-            {/*/!*{`00:15:54`}*!/*/}
-            {/*{`${'00'}:${'00'}:${'00'}`}*/}
+            <img alt='#' src={timer}/>
 
             <p>{`${time.hours.toString().padStart(2, '0')}:${time.minutes
                 .toString()

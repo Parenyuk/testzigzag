@@ -11,16 +11,16 @@ type PropsType = {
 export const DepositCard = ({addCount, getCount, depositAmount}: PropsType) => {
 
     const addCountNumber = (): void => {
-       depositAmount(addCount)
+        depositAmount(addCount)
     }
 
     return (
         <div className='depositCard' onClick={addCountNumber}>
             <div>
-            Пополнить на
-            <div>
-                $ {addCount}
-            </div>
+                Пополнить на
+                <div>
+                    $ {addCount}
+                </div>
             </div>
             <div className='depositCardLowerPart'>
                 Получить
