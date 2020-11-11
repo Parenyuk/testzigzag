@@ -15,8 +15,8 @@ type PropsType = {
 export const MainModal = ({title, setIsShown}: PropsType): React.ReactElement => {
 
     return (
-        <div className='MainModal'>
-            <Modal>
+        <div >
+            <Modal className='MainModal'>
                 <button className='closeButton' onClick={() => setIsShown(false)}>
                     <img alt={'#'} src={closeButton}/>
                 </button>
@@ -37,3 +37,4 @@ export const MainModal = ({title, setIsShown}: PropsType): React.ReactElement =>
         </div>
     )
 }
+

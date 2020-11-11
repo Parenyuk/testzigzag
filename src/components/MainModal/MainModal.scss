@@ -1,13 +1,14 @@
 
-.MainModal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+//.MainModal {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//}
 
-.modal{
+.modal {
   display: flex;
   flex-direction: column;
+  //flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: #2E354B;
@@ -20,15 +21,13 @@
 }
 
 .closeButton {
-  background-color: #2E354B;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   cursor: pointer;
   position: absolute;
-  top: 15px;
-  left: 93%;
+  top: 10px;
+  right: 10px;
+  background-color: #3C4561;
 }
+
 .title {
   font-size: 36px;
   font-style: normal;
@@ -38,7 +37,7 @@
   text-align: center;
   color: #EEEEEE;
   margin-top: 0px;
- margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .choicePaymentMethod {
@@ -53,16 +52,9 @@
   background: #3C4561;
   padding-left: 60px;
 }
+
 .choicePaymentMethod::before {
   background-image: url("./../../assets/images/card.png");
-
-  //content: url();
-  //z-index: 10;
-  //height: 20px;
-  //width: 20px;
-  //border: 2px solid red;
-  //position: absolute;
-
 
 }
 
@@ -74,6 +66,7 @@
   opacity: 0.5;
   padding: 20px 100px;
 }
+
 .detailsText {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
